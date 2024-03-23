@@ -1,13 +1,327 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* All codes related to Navbar */
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo {
+  background-color: #e0b973;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-right {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+.nav-right p {
+  cursor: pointer;
+}
+
+/* Home Intro-page related codes */
+.home-background-image {
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/mainimage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.homefirstbox-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  margin-left: 40px;
+}
+.homefirstbox-text h1 {
+  font-size: 90px;
+}
+.homefirstbox-text h3 {
+  font-size: 70px;
+}
+/* Home intro page button */
+
+.homefirstbox-btn {
+  width: 150px;
+  height: 50px;
+  background-color: #e0b973;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.homefirstbox-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.homescroll {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: -120px;
+  cursor: pointer;
+}
+.homescroll img {
+  width: 30px;
+  height: 30px;
+}
+/* Homepage second-box related codes*/
+.homesecondbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homesecondbox-text {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+/*Information box with photo codes*/
+.homesecondbox-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-text {
+  flex: 1;
+  border-left: 2px solid #14274a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-text h1 {
+  margin-left: 10px;
+}
+.info-text p {
+  margin: 10px;
+}
+.info-explore-btn {
+  width: 130px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #e0b973;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.indo-img {
+  flex: 1;
+  margin-left: 50px;
+}
+.indo-img img {
+  width: 600px;
+  height: 300px;
+  border-radius: 40px;
+}
+
+/* Homepage location text(Also used in second and third page)*/
+.homesecondbox-locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.homesecondbox-locations p {
+  margin: 10px;
+}
+.location-icon {
+  margin-top: 10px;
+}
+.location-icon img {
+  width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+/*Footer all codes*/
+.footer {
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/footerbackround.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.footer-first {
+  flex: 1;
+  color: white;
+  margin: 30px;
+}
+.footer-first p {
+  margin-top: 15px;
+}
+.footer-first img {
+  cursor: pointer;
+}
+
+.footer-second {
+  flex: 1;
+  color: white;
+  margin: 30px;
+}
+.footer-second p {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.footer-third {
+  flex: 1;
+  color: white;
+  margin: 30px;
+}
+.footer-third-social {
+  display: flex;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.footer-third-social p {
+  margin-left: 10px;
+}
+
+.footer-fourth {
+  flex: 1;
+  color: white;
+  margin: 30px;
+}
+.footer-fourth-submit {
+  display: flex;
+  border: 2px solid #e0b973;
+  margin-top: 15px;
+  border-radius: 4px;
+  height: 35px;
+}
+.email-text {
+  flex: 5;
+  display: flex;
+  align-items: center;
+}
+.email-text p {
+  margin-left: 5px;
+}
+.email-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #e0b973;
+  color: black;
+  cursor: pointer;
+}
+
+/*Second page codes*/
+
+.facilities-background-image {
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/palm-trees-at-night-258154\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+/*All facilities photos codes*/
+.facilities-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.facilities-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facilities-text p {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+.facilities-photos-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.facilities-photos-all img {
+  width: 1000px;
+  height: 800px;
+  flex-shrink: 0;
+  margin-top: 50px;
+}
+
+/* Rooms page all codes*/
+
+.rooms-background-image {
+  display: flex;
+  align-items: center;
+  background-image: url(./assets/thirdpagemain.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
 }
